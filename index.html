@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <form action="" id="form">
+    <h1>Contact Us</h1>
+
+    <div class="div_names">
+      <div>
+        <label for="first_name">First Name *</label>
+        <input type="text" name="First name" id="first_name" aria-invalid="false">
+        <span class="error_message" id="first_name_erro"></span>
+      </div>
+      <div>
+        <label for="last_name">Last Name *</label>
+        <input type="text" name="Last name" id="last_name" aria-invalid="false">
+        <span class="error_message" id="last_name_erro"></span>
+      </div>
+    </div>
+
+    <div class="div_email">
+      <label for="email">Email Address *</label>
+      <input type="email" name="Email" id="email" aria-invalid="false">
+      <span class="error_message" id="email_erro"></span>
+    </div>
+
+    <div class="div_main_query">
+      <p>Query Type *</p>
+
+      <div class="div_query">
+
+        <label class="query_option" for="general">
+          <input type="radio" name="query_type" id="general" value="general" aria-invalid="false">
+          <span>General Enquiry</span>
+        </label>
+
+        <label class="query_option" for="support">
+          <input type="radio" name="query_type" id="support" value="support" aria-invalid="false">
+          <span>Support Request</span>
+        </label>
+        
+      </div>
+      <span class="error_message" id="query_erro"></span>
+    </div>
+
+    <div class="div_message">
+      <label for="message">Message *</label>
+      <textarea id="message" aria-invalid="false"></textarea>
+      <span class="error_message" id="message_erro"></span>
+    </div>
+
+    <div>
+      <input type="checkbox" name="consent" id="check" aria-invalid="false">
+      <label for="check">I consent to being contacted by the team *</label>
+      
+    </div>
+    <span class="error_message" id="check_erro"></span>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/">Bryan</a>.
+  </footer>
+
+  <div id="alert" class="hide" aria-live="polite">
+    
+    <h1><img src="assets\images\icon-success-check.svg" alt=""> Message sent!</h1>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
